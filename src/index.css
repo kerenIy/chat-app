@@ -103,14 +103,14 @@ body {
 
 .message-content-blue {
   display: flex;
-  justify-content: right;
-  align-items: right;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .message-content-gray {
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .message {
