@@ -47,7 +47,7 @@ body {
 .message-input input {
   outline: none;
   border: none;
-  width: 43%;
+  width: 40%;
   font-family: "Outfit", sans-serif;
   padding: 4px 8px;
 }
@@ -56,8 +56,8 @@ body {
   outline: none;
   font-family: "Outfit", sans-serif;
   padding: 6px 16px;
-  width: 90%;
-  margin: 5px 0px;
+  width: 80%;
+  margin: 5px 10px;
 }
 
 .message-container {
@@ -115,7 +115,7 @@ body {
 
 .message {
   display: flex;
-  align-items: center;
+  align-items: column;
 }
 
 .message-timestamp {
@@ -128,4 +128,5 @@ body {
 .username {
   font-size: 32px;
   font-weight: bold;
+  text-align: center;
 }
