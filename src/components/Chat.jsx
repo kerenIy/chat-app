@@ -58,6 +58,8 @@ export default function Chat() {
       {loggedIn ? (
         <div className="">
           <ChatHeader />
+          <br />
+          <br />
           <MessageContainer messages={messages} currentUser={name} />
           <MessageTextBox
             onSendMessage={(messages) => {
@@ -78,13 +80,27 @@ export default function Chat() {
         </div>
       ) : (
         <>
-          <p>Enter your chat username</p>
-          <TextField
-            label="Username"
-            onChange={(e) => setName(e.target.value)}
-          />
-          <Button onClick={() => handleUserLogin(name)}>Login</Button>
-          <p onClick={clearChat}>Clear</p>
+          <div className="login-button-container">
+            <div className="">
+              <p className="username">Enter your chat username</p>
+              <input
+                type="text"
+                placeholder="Username"
+                className="login-input"
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+              />
+              <br />
+              <div className="login-button-container">
+                <button
+                  className="login-button"
+                  onClick={() => handleUserLogin(name)}
+                >
+                  Login
+                </button>
+              </div>
+            </div>
+          </div>
         </>
       )}
     </div>

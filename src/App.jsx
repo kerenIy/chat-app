@@ -8,11 +8,11 @@ import Chat from "./components/Chat";
 
 function App() {
   return (
-    <>
+    <div className="center-content">
       <Provider store={store}>
         <Chat />
       </Provider>
-    </>
+    </div>
   );
 }
 
